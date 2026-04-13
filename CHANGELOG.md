@@ -299,22 +299,44 @@ The version at the start of development. Tracking worked only on Animebook (anim
 
 ---
 
-## v4.6 *(planned)*
-- Jellyfin support
+## v4.6 — Anki integration
+
+### Anki Cards metric (popup)
+- New **Anki Cards** metric appears in the popup next to Days Immersed and Videos Watched when Anki integration is enabled
+- Shows the total number of cards in the selected Anki deck, fetched live via AnkiConnect (`http://127.0.0.1:8765`)
+- Deck name is shown in small text beneath the card count
+- The stat row uses `auto-fit` columns so it expands cleanly from 2 to 3 metrics when Anki is enabled
+
+### Anki integration settings (⚙️ modal)
+- **Anki integration** toggle added to the Settings modal below the Auto-hide toggle
+- Off by default — hidden entirely for users who don't use Anki
+- When toggled on, a deck selector appears populated from AnkiConnect's `deckNames` action
+- Selecting a deck saves it to `chrome.storage.local` and immediately fetches the card count
+- When the settings modal is reopened with Anki enabled, decks are reloaded and the saved deck is auto-selected and fetched — no need to reselect manually
+
+### Offline handling
+- If AnkiConnect is unreachable (Anki not running), the last known card count is loaded from `chrome.storage.local` and displayed with `offline` shown in place of the deck name
+- If no cached count exists yet, shows `—` with `offline`
+- Successful fetches always update the cached count so the offline fallback stays current
 
 ---
 
 ## v4.7 *(planned)*
-- U-Next support
+- Jellyfin support
 
 ---
 
 ## v4.8 *(planned)*
-- Hulu support
+- U-Next support
 
 ---
 
 ## v4.9 *(planned)*
+- Hulu support
+
+---
+
+## v5.0 *(planned)*
 - Netflix support
 
 ---
