@@ -29,6 +29,9 @@ These amounts will vary from person to person depending on how distant your targ
 ## An on/off switch (new to v4.2)
 An on/off switch has been added in the popup so you can essentially get rid of the “Track” button that will keep appearing in the top left of each video on multi-language content sites. This is for those times when you are not actively immersing in your target language (or whatever subject). If the “Track” button that appears on videos becomes a bit distracting, and you are not really using it, you can simply just turn it off. This will essentially turn off time tracking altogether though, so you do need to remember to switch the tracker back on again when you want to continue your immersion.
 
+## Anki integration (new to v4.6)
+This is an option accessed via the cogwheel at the bottom of the popup. When “Anki integration” is switched on, AT will connect to Anki using the AnkiConnect addon (installed separately) and you simply choose whatever deck you want to track from your Anki collection. Anki needs to be on for this to happen. A new metric will appear next to “VIDEOS WATCHED” called “ANKI CARDS” that shows you exactly how many cards a certain deck in your collection has. I personally measure my progress by how many cards a deck has. Each card typically has 1 new word. So number of cards = number of new words. The idea is that seeing the size of your Anki deck growing over time as well as your immersion hours can be extra motivating. It is worth noting that this feature works best for people who are actively sentence mining rather than working from a pre-made deck. The metric is hidden by default so that it doesn't become an eyesore for people who don't want to use it. (Thanks goes to @meo343 for suggesting this feature)
+
 ## A history page
 At the bottom of the popup there is a link to see the history page, where you can view a history of the titles of all the videos you’ve watched, the days on which you watched them and their sources whether it was viewed on Animebook, or YouTube or whatever. It also comes with a small donut chart so you can see your viewing preferences from a distance, and there is also a sources filter section where you can filter your history by source. If you only wanted to see your YouTube entries for example, then you would simply select the relevant badge. Once you start to get a lot of entries on your history page, then this feature could come in handy (thanks goes out to @meo343 for suggesting this feature).
 
@@ -50,6 +53,9 @@ While on YouTube, Disney+ and Amazon Prime, time tracking is set up manually rat
 6. Next video, same process — you choose whether to track it or not
 
 Also, for Japanese learners specifically, the extension has been built to work with the NihongoTube Chrome extension in mind (Thanks goes out to its developer @hexindria for their invaluable help with that!)
+
+## A draggable Track button and an Auto-hide feature
+I have spent a lot of time considering the right placement of the track button on the screen for each platform, due to there being many extra elements like the title and other onscreen buttons. But I understand that even then elements of individual videos may still get covered. So to solve this, I have simply made the button draggable so that each user can move the button freely on the screen on a per video basis. Also, by default, I have made the button stay permanently on the screen as a constant reminder that I am tracking a video, but I also know that other users may find this distracting, so I have added an “Auto-hide Track button” feature in the settings (via the cogwheel). (Thanks again goes to @meo343 for suggesting these features)
 
 ## Screenshots
 Popup and history page (dark mode)
